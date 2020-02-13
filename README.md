@@ -51,7 +51,7 @@ Since this is a classification model, the following models are used:
 Model are evaluated by Accuracy, Receiver operating characteristic(ROC) curve and the Area Under Curve(AUC) of ROC.
 
 | Models                  | Accuracy      | AUC      |
-| ----------------------- |:-------------:| --------:|
+| ----------------------- |:-------------:|:--------:|
 | SVC                     | 0.799787      | 0.794642 |
 | Logistic Regression     | 0.794460      | 0.806921 |
 | Random Forest           | 0.937565      | 0.966126 |

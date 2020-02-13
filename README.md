@@ -38,3 +38,28 @@ Comorbidity means that more than one disorders happened at the same time. Resear
 ### Demographics
 Demographics could also be an important factor. Different regions, incomes, races and so on could impact the one-year mortality in various ways. However, due to the limitation of database, for this project, I only considered gender as one of the features.
 - Gender
+
+## Modeling 
+Since this is a classification model, the following models are used: 
+
+    *SVC
+    *Logistic Regression
+    *Random Forest
+    *Gradient Boosting Trees
+    *Decision Trees
+
+Model are evaluated by Accuracy, Receiver operating characteristic(ROC) curve and the Area Under Curve(AUC) of ROC.
+
+| Models                  | Accuracy      | AUC      |
+| ----------------------- |:-------------:| --------:|
+| SVC                     | 0.799787      | 0.794642 |
+| Logistic Regression     | 0.794460      | 0.806921 |
+| Random Forest           | 0.937565      | 0.966126 |
+| Gradient Boosting Trees | 0.795348      | 0.821160 |
+| Decision Trees          | 0.725473      | 0.921356 |
+
+
+## Suggestions 
+Overall, the Random Forest model predict the one-year mortality with great accuracy. With this model, the information, including ages, genders, and diagnoses (diseases and comorbity), of the patients could be collected at their admission. Then by filling these information into the designed tables and inputed into model, the prediciton could be made. This prediction would be essential for both doctors and patients to make further decisions.
+
+On the other hand, there are also many spaces for improvement for this model. As I mentioned before, diseases could be classfied into a more detailed way. If more information about the region, incomes, and race could be known, it would be helpful to include these features. Also, as indicated by many literatures, the medical history of the patients, hospital performace, the facilities available, the lab values etc. are all associated with the mortality rate. These data is harder to collect and analyze. But if a decent method could be figured out, then this model would be much more accurate and powerful.

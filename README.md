@@ -32,9 +32,9 @@ There are researches indicating that the ages at patients' first admission to ho
 ### Diseases
 Diseases is also another major cause of mortality. Here I catecorized the diseases into 11 groups based on classifications from http://www.icd9data.com/.
 
-## Comorbidity
+### Comorbidity
 Comorbidity means that more than one disorders happened at the same time. Researches show that comorbidity usually associates with more complicated clinical management and worse health outcomes. In this project, the number of disorders for single encounter was considered as one of the features.
 
-## Demographics
+### Demographics
 Demographics could also be an important factor. Different regions, incomes, races and so on could impact the one-year mortality in various ways. However, due to the limitation of database, for this project, I only considered gender as one of the features.
 - Gender
